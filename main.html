@@ -1,1 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Jyothis | Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
+    
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="animate-in">Anand Jyothis G</h1>
+        <p class="animate-in">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        <a href="#contact" class="hero-btn animate-in">Get In Touch</a>
+        
+        <div class="social-icons animate-in">
+            <a href="https://www.linkedin.com/in/anand-jyothis-257086223/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="glass">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/anandjyothisg" target="_blank" class="glass">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:your.anandjyothis57@gmail.com" class="glass">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+91 7904559675" class="glass">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img animate-in">
+            <img src="C:\Users\Anand Jyothis G\Pictures\Camera Roll\Anand.jpg" alt="Your Profile" class="glass">
+        </div>
+        <div class="about-content">
+            <h2 class="animate-in">About Me</h2>
+            <p class="animate-in">
+                Hello! I'm a passionate Full Stack Developer with expertise in building beautiful, functional, and user-centered digital experiences. With a background in both design and development, I bring a unique perspective to every project.
+            </p>
+            <p class="animate-in">
+                My goal is to create products that are not only aesthetically pleasing but also provide exceptional user experiences. I enjoy tackling complex problems and finding elegant solutions through code.
+            </p>
+            
+            <div class="education-container">
+                <h3 class="animate-in">Education</h3>
+                <div class="education-item glass animate-in">
+                    <h3>Higher Studies</h3>
+                    <p>Shri Vidhya Mandhir CBSE school, Pushpathur. </p>
+                    <span>2021 - 2023</span>
+                </div>
+                <div class="education-item glass animate-in">
+                    <h3>BE.CSE (Artificial Intelligence and MAchine Learning)</h3>
+                    <p>Dr.Mahalingam College of Engineering and Technology, Pollachi.</p>
+                    <span>2023 - 2027</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="animate-in">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JS</p>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Django, Flask</p>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
+            </div>
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database</h3>
+                <p>MySQL, Google Firestore</p>
+                <div class="skill-progress">
+                    <span data-progress="60%"></span>
+                </div>
+            </div>
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Figma</p>
+                <div class="skill-progress">
+                    <span data-progress="75%"></span>
+                </div>
+            </div>
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Model development, Model deployment</p>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skill-box glass animate-in">
+                <div class="icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Version Control</h3>
+                <p>Git, GitHub</p>
+                <div class="skill-progress">
+                    <span data-progress="95%"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="animate-in">My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card glass animate-in">
+            <img src="C:\Users\Anand Jyothis G\Pictures\Screenshots\Screenshot 2024-12-26 182759.png" alt="Project 1">
+            <div class="project-info">
+                <h3>NurtureMe</h3>
+                <p>A skin type classification model deployed using Django for Backend and HTML, CSS and JS for Frontend and integrated with Google Firebase for authentication.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="project-card glass animate-in">
+            <img src="C:\Users\Anand Jyothis G\Pictures\Screenshots\Screenshot 2025-04-05 104530.png" alt="Project 2">
+            <div class="project-info">
+                <h3>Telemed</h3>
+                <p>A Telemedicine integartion platform based idea for remote villages to get acces with doctor's appointment and other medical supplies.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card glass animate-in">
+            <img src="C:\Users\Anand Jyothis G\Pictures\Screenshots\Screenshot 2025-04-05 105212.png" alt="Project 3">
+            <div class="project-info">
+                <h3>Deeptron</h3>
+                <p>A deepfake classifiaction model that classifies real and deepfake videos through the links or through direct media upload.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card glass animate-in">
+            <img src="C:\Users\Anand Jyothis G\Downloads\e9eef197-a1c8-4271-adee-0f3e8e6ae98a (1).webp" alt="Project 3">
+            <div class="project-info">
+                <h3>Oxidative Stress Prediction</h3>
+                <p>Currently undergoing a research for predicting the oxidative stress using Machine Learning algorithms with the guidance of doctor's advice in Mirakle cancer treatment centre.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>1st Prize in National Level Hackathon</h3>
+                    <ul class="achievement-list">
+                        <li style="text-align: justify;">The Hackathon was hosted by Shree Saraswathi Thyagaraj College of Arts and Science, Pollachi honoured our team with a cash prize of 10 thousand for our deepfake classification model.</li>
+                    </ul>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certification</h3>
+                    <ul class="achievement-list">
+                        <li style="text-align: justify;">Secured B2 grade in Linguaskill examination conducted by Cambridge University</li>
+                        <li style="text-align: justify;">Certified Machine Learning Engineer by PrepInsta.</li>
+                    </ul>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>My favourite Project</h3>
+                    <ul class="achievement-list">
+                        <li style="text-align: justify;">Currently undergoing a research for predicting the oxidative stress using Machine Learning algorithms with the guidance of doctor's advice in Mirakle cancer treatment centre. This project is even more close to my heart because our team strongly beleieves that this has a social outcome such that many patients could be benefited out of this innovation.</li>
+                    </ul>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Leadership</h3>
+                    <ul class="achievement-list">
+                        <li style="text-align: justify;">Joint-Treasurer in our department's association called Innoviyal.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>anandjyothis57@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>+91 7904559675</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>Palani, Dindigul</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <p>linkedin.com/in/anandjyothis</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="form-success">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anand Jyothis. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/anand-jyothis-257086223/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/anandjyothisg"><i class="fab fa-github"></i></a>
+            <a href=https://www.instagram.com/anand_jyothis?igsh=MXdqYWR4Y3BubTI0MQ==><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+</html>
