@@ -44,6 +44,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
+
+// Add this to your JavaScript file
+document.addEventListener('DOMContentLoaded', () => {
+    const profileWrapper = document.querySelector('.profile-wrapper');
+    const profileImage = document.querySelector('.profile-image');
+    
+    profileWrapper.addEventListener('mousemove', (e) => {
+        const rect = profileWrapper.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        
+        profileImage.style.transform = `rotateY(${x * 20}deg) rotateX(${y * -20}deg)`;
+    });
+    
+    profileWrapper.addEventListener('mouseleave', () => {
+        profileImage.style.transform = 'rotateY(0) rotateX(0)';
+    });
+});
+    
   
     // Active navigation link based on scroll position
     function setActiveNavLink() {
