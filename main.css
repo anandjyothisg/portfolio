@@ -252,18 +252,109 @@
             align-items: center;
         }
 
-        .about-img {
-            flex: 1;
-            position: relative;
-        }
+/* Modern Profile Image Styling */
+.profile-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
 
-        .about-img img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
 
+.profile-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.profile-glow {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(circle at 50% 50%, rgba(79, 172, 254, 0.2), rgba(0, 242, 254, 0) 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    animation: pulse 4s ease-in-out infinite alternate;
+}
+
+.profile-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* Add particle dots */
+.profile-wrapper::before,
+.profile-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(79, 172, 254, 0.8);
+    animation: particle-move 8s infinite;
+}
+
+.profile-wrapper::before {
+    top: 20%;
+    left: -20px;
+    animation-delay: 0s;
+}
+
+.profile-wrapper::after {
+    bottom: 10%;
+    right: -15px;
+    animation-delay: 2s;
+}
+
+/* Mouse interaction - add this in your JS */
+.profile-wrapper:hover .profile-image {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes particle-move {
+    0%, 100% { transform: translate(0, 0); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translate(80px, -40px); opacity: 0; }
+}
         .about-content {
             flex: 1;
         }
